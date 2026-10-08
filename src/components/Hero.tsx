@@ -68,6 +68,9 @@ export const Hero: React.FC = () => {
                 className="absolute inset-0 w-full h-full object-cover"
                 style={{ y: yMainImg, scale: scaleMainImg }}
                 decoding="async"
+                fetchPriority="high"
+                width="1280"
+                height="960"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/35 to-transparent" />
 

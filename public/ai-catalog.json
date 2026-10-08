@@ -1,0 +1,23 @@
+{
+  "name": "Ritelindo Group",
+  "description": "Rak minimarket, rak gudang, perlengkapan retail, dan layanan setup toko di Indonesia.",
+  "url": "https://ritelindo.web.id/",
+  "language": "id-ID",
+  "resources": [
+    {
+      "name": "Homepage",
+      "url": "https://ritelindo.web.id/",
+      "type": "website"
+    },
+    {
+      "name": "Sitemap",
+      "url": "https://ritelindo.web.id/sitemap.xml",
+      "type": "sitemap"
+    },
+    {
+      "name": "LLM guidance",
+      "url": "https://ritelindo.web.id/llms.txt",
+      "type": "text"
+    }
+  ]
+}

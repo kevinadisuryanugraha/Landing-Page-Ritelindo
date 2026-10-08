@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://ritelindo.web.id/sitemap.xml
+
+# AI-readable site summary
+# https://ritelindo.web.id/llms.txt
