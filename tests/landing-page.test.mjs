@@ -95,7 +95,7 @@ describe('BMAD & Anti-Slop Strict Verification Suite (Ritelindo Landing Page)', 
       const html = fs.readFileSync(path.resolve('index.html'), 'utf-8');
       assert.ok(html.includes('<title>Pabrik Rak Minimarket'), 'Title must target primary keyword');
       assert.ok(html.includes('name="description"'), 'Meta description must exist');
-      assert.ok(html.includes('rel="canonical" href="https://ritelindo.co.id"'), 'Canonical URL required');
+      assert.ok(html.includes('rel="canonical" href="https://ritelindo.web.id"'), 'Canonical URL required');
       assert.ok(html.includes('name="robots"'), 'Robots tag must exist');
       assert.ok(html.includes('name="googlebot"'), 'Googlebot explicit tag must exist');
     });

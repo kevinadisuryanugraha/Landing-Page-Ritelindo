@@ -12,7 +12,7 @@ export const COMPANY_INFO = {
   tagline: 'Pabrik Rak Minimarket & Solusi Setup Toko Retail Modern Langsung dari Produsen',
   phoneDisplay: '+62 812-3456-7890',
   whatsappRaw: '6281234567890',
-  email: 'halo@ritelindo.co.id',
+  email: 'halo@ritelindo.web.id',
   address: 'Kawasan Industri Retail Terpadu, Jawa Timur dan Jawa Tengah',
   operationalHours: 'Senin - Sabtu: 08.00 - 17.00 WIB (Layanan WA Konsultasi Responsif)',
   copyrightYear: 2026,
