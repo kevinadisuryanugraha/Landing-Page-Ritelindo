@@ -31,7 +31,7 @@ status: "Published"
 
 | Date | Version | Authors | Modification |
 | :--- | :---: | :--- | :--- |
-| 07/10/2026 | 1.0 | Kevin Adisurya Nugraha & BMad Agent PM | Pembuatan dokumen spesifikasi teknis dan kebutuhan produk (PRD) Landing Page B2B Ritelindo berdasarkan Development PRD Template dan task-kevin.md |
+| 07/10/2026 | 1.0 | Kevin Adisurya Nugraha & BMad Agent PM | Pembuatan dokumen spesifikasi teknis dan kebutuhan produk (PRD) Landing Page B2B Ritelindo berdasarkan Development PRD Template dan docs/product/task-kevin.md |
 
 ---
 
@@ -369,7 +369,7 @@ Kebutuhan fungsional dijabarkan secara rinci menggunakan kode identifikasi stand
 
 #### 4.4.3. Core Value Proposition Grid (7 Layanan Unggulan)
 
-Bagian ini mengimplementasikan secara presisi 7 poin ketentuan perusahaan yang diwajibkan dalam `task-kevin.md`.
+Bagian ini mengimplementasikan secara presisi 7 poin ketentuan perusahaan yang diwajibkan dalam `docs/product/task-kevin.md`.
 
 | No | FR ID | Poin Value Proposition Perusahaan | Deskripsi & Implementasi UI | Status |
 | :-: | :--- | :--- | :--- | :-: |

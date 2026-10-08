@@ -5,9 +5,9 @@ author: "Kevin Adisurya Nugraha"
 version: "1.0"
 status: "final"
 references:
-  prd: "docs_kevin/PRD-Landing-Page-Ritelindo.md"
-  design: "docs_kevin/DESIGN.md"
-  experience: "docs_kevin/EXPERIENCE.md"
+  prd: "docs/reference-assets/PRD-Landing-Page-Ritelindo.md"
+  design: "docs/reference-assets/DESIGN.md"
+  experience: "docs/reference-assets/EXPERIENCE.md"
 ---
 
 # Technical Architecture Specification (ARCHITECTURE.md)

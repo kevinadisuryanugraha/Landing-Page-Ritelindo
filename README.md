@@ -149,15 +149,14 @@ Testing Multi-Device Responsive Layout:
 
 ```text
 Landing-Page-Ritelindo/
-├── docs_kevin/                       # Dokumen perencanaan & spesifikasi resmi
-│   ├── Development PRD Template.docx # Template acuan dari perusahaan
-│   ├── PRD-Landing-Page-Ritelindo.md # Dokumen PRD hasil penyusunan BMad
-│   ├── DESIGN.md                     # Sistem Desain Visual (Google Labs Spec)
-│   ├── EXPERIENCE.md                 # Spesifikasi UX, State & Aksesibilitas
-│   ├── ARCHITECTURE.md               # Keputusan Arsitektur Teknis (AD-01 s/d AD-06)
-│   ├── TICKETS.md                    # Pemecahan Epics & Kriteria Penerimaan
-│   └── image/                        # Referensi visual lookbook (Furnish, Apex Arc, Housify)
+├── docs/                             # Dokumentasi proyek dan referensi
+│   ├── architecture/                 # Arsitektur, desain, UX, dan ticketing
+│   ├── product/                      # PRD dan task brief
+│   ├── audits/                       # Audit Anti-Slop dan quality reports
+│   └── reference-assets/             # Template dan referensi visual awal
 ├── public/                           # Aset statis & PWA
+│   ├── icons/                        # Ikon PWA vektor SVG
+│   ├── images/                       # Fotografi terkompresi WebP
 │   ├── icons/                        # Ikon PWA vektor SVG (192x192, 512x512)
 │   ├── images/                       # Fotografi arsitektural terkompresi WebP (<280 kB)
 │   ├── manifest.json                 # Web App Manifest PWA
@@ -192,7 +191,7 @@ Landing-Page-Ritelindo/
 │   └── landing-page.test.mjs         # Suite pengujian otomatis komprehensif (29 skenario)
 ├── scripts/
 │   └── test-multi-device.mjs         # Skrip audit responsivitas 8 viewports via Chrome CDP
-├── anti-slop/
+├── docs/audits/
 │   └── audit-001-2026-10-07.md       # Laporan audit anti-slop resmi
 ├── AGENTS.md                         # Instruksi kerja agen AI & konvensi tim
 ├── index.html                        # HTML5 template dengan SEO, OG Tags & Schema.org
@@ -271,7 +270,7 @@ Aplikasi menghasilkan berkas statis murni yang optimal dan siap di-deploy secara
 - **Deliverables:**
   1. Repositori Publik GitHub
   2. Live Demo URL (Vercel / Netlify)
-  3. Dokumen PRD Markdown (`docs_kevin/PRD-Landing-Page-Ritelindo.md`)
+  3. Dokumen PRD Markdown (`docs/reference-assets/PRD-Landing-Page-Ritelindo.md`)
 
 ---
 

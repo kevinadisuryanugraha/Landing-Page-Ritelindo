@@ -3,7 +3,7 @@
 
 ## Landing-Page-Ritelindo
 
-High-converting B2B Landing Page for Ritelindo Group (Google Ads Search Campaign). React 18, Vite 5, TypeScript, Tailwind CSS. Planning documents and specifications live in `docs_kevin/` (`PRD-Landing-Page-Ritelindo.md`, `DESIGN.md`, `EXPERIENCE.md`, `ARCHITECTURE.md`, `TICKETS.md`).
+High-converting B2B Landing Page for Ritelindo Group (Google Ads Search Campaign). React 18, Vite 5, TypeScript, Tailwind CSS. Planning documents and specifications live in `docs/reference-assets/` (`PRD-Landing-Page-Ritelindo.md`, `DESIGN.md`, `EXPERIENCE.md`, `ARCHITECTURE.md`, `TICKETS.md`).
 
 ## Policy
 

@@ -5,9 +5,9 @@ author: "Kevin Adisurya Nugraha"
 version: "1.0"
 status: "final"
 references:
-  prd: "docs_kevin/PRD-Landing-Page-Ritelindo.md"
-  architecture: "docs_kevin/ARCHITECTURE.md"
-  design: "docs_kevin/DESIGN.md"
+  prd: "docs/reference-assets/PRD-Landing-Page-Ritelindo.md"
+  architecture: "docs/reference-assets/ARCHITECTURE.md"
+  design: "docs/reference-assets/DESIGN.md"
 ---
 
 # Implementation Epics & Ticket Breakdown (TICKETS.md)
@@ -67,7 +67,7 @@ references:
   - Menampilkan badge "Free Konsultasi & Layout 3D".
 
 #### [TICKET-2.3] 7 Core Value Proposition Grid (`ValueProps.tsx`)
-- **Deskripsi:** Membangun grid kartu yang merepresentasikan 7 keunggulan utama perusahaan sesuai ketentuan `task-kevin.md`.
+- **Deskripsi:** Membangun grid kartu yang merepresentasikan 7 keunggulan utama perusahaan sesuai ketentuan `docs/product/task-kevin.md`.
 - **Kriteria Selesai (Acceptance Criteria):**
   - Menampilkan 7 kartu lengkap: *Free Konsultasi & Layout 3D*, *Free Ongkir Jawa-Bali*, *Free Perakitan Jatim/Jateng/DIY*, *Bisa Custom Ukuran*, *Harga Pabrik Langsung*, *Satuan/Paket/Proyek*, dan *Jasa Interior Toko Modern*.
   - Desain kartu bersih, teratur, dan responsif (1 kolom di mobile, 2 kolom di tablet, 3-4 kolom di desktop).

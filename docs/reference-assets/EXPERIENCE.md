@@ -5,8 +5,8 @@ author: "Kevin Adisurya Nugraha"
 version: "1.0"
 status: "final"
 references:
-  design_system: "docs_kevin/DESIGN.md"
-  prd: "docs_kevin/PRD-Landing-Page-Ritelindo.md"
+  design_system: "docs/reference-assets/DESIGN.md"
+  prd: "docs/reference-assets/PRD-Landing-Page-Ritelindo.md"
 ---
 
 # User Experience & Interaction Specification (EXPERIENCE.md)
@@ -19,7 +19,7 @@ references:
 - **Platform Target:** Web Application (Single-Page Responsive Web / Static Site).
 - **Primary Form-Factor:** Mobile Smartphone (layar 360px - 430px) sebagai perangkat utama pengakses iklan Google Ads, disusul Desktop Browser (1280px - 1920px) bagi pengambil keputusan kantor/laptop.
 - **UI Framework System:** Tailwind CSS dengan komponen modular terisolasi.
-- **Design Tokens Source:** Mengacu secara penuh pada `docs_kevin/DESIGN.md`.
+- **Design Tokens Source:** Mengacu secara penuh pada `docs/reference-assets/DESIGN.md`.
 
 ---
 
