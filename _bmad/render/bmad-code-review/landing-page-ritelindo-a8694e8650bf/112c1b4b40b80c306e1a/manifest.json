@@ -1,0 +1,67 @@
+{
+  "generation_hash": "112c1b4b40b80c306e1a",
+  "inputs": {
+    "jinja2_version": "3.1.6",
+    "project_root": "C:\\laragon\\www\\kevin-work\\Ritelindo\\Landing-Page-Ritelindo",
+    "renderer_sha256": "2c6fe593bfce1deb4783f1138b10b8c628cfa324a4688c9bf1d63ab57f8bc466",
+    "resolved_values": {
+      "config.core.output_folder": "C:/laragon/www/kevin-work/Ritelindo/Landing-Page-Ritelindo/_bmad-output",
+      "customization.workflow.activation_steps_append": [],
+      "customization.workflow.activation_steps_prepend": [],
+      "customization.workflow.on_complete": "",
+      "customization.workflow.persistent_facts": [],
+      "customization.workflow.review": "thorough",
+      "customization.workflow.thorough_lenses": [
+        {
+          "id": "blind-hunter",
+          "instruction": "Launch a context-free subagent with this prompt:\n\nConduct a review of CONTENT.\nLook for what's missing, not only what's wrong.\nCompute your finding floor N from the diff file's size: N = min(floor(sqrt(kB) + 1), 10), where kB is the file's size in kilobytes. State the arithmetic in one line, then find at least N issues to fix or improve.\nOutput a Markdown list of findings only — no severity, priority, or ranking.\nIf the content is empty, stop and say so.\nIf you have zero findings, re-check and keep thinking; do not stop with an empty list.\n\nCONTENT: the unified diff at `{diff_file}`. Read that file — it is the content under review.\n\nDo not invoke any skill, and do not spawn subagents of your own — you are the reviewer. Return your findings as text in your final message; do not route them through any findings-reporting tool the host may offer.\n\n",
+          "name": "Blind Hunter"
+        },
+        {
+          "id": "edge-case-hunter",
+          "instruction": "Launch a context-free subagent with this prompt:\n\nRead `{skill-root}/review-prompts/edge-case-hunter.md` completely and follow it as your review instructions.\n\nclaims_file (leave unread until your instructions call for it): {claims_file}\n\nReview content: the unified diff at `{diff_file}`. Read that file — it is the content under review.\n\nDo not invoke any skill, and do not spawn subagents of your own — you are the reviewer. If the instruction file is unreadable, report that exact failure and stop. Return your findings as text in your final message; do not route them through any findings-reporting tool the host may offer.\n\n",
+          "name": "Edge Case Hunter"
+        },
+        {
+          "id": "verification-gap",
+          "instruction": "Launch a context-free subagent with this prompt:\n\nRead `{skill-root}/review-prompts/verification-gap.md` completely and follow it as your review instructions.\n\nReview content: the unified diff at `{diff_file}`. Read that file — it is the content under review.\n\nDo not invoke any skill, and do not spawn subagents of your own — you are the reviewer. If the instruction file is unreadable, report that exact failure and stop. Return your findings as text in your final message; do not route them through any findings-reporting tool the host may offer.\n\n",
+          "name": "Verification Gap Reviewer"
+        },
+        {
+          "id": "intent-alignment",
+          "instruction": "Launch a subagent with this prompt:\n\nYou are an intent-alignment auditor. You have no other context about how this change was produced. Here is the verbatim intent this work started from:\n\n{verbatim_intent}\n\nThe diff is the unified diff at `{diff_file}`. Read that file — it is the change under review.\n\nYour task is strictly descriptive — do not prescribe additional work. Report: (1) the defensible readings of the intent, enumerated; (2) which reading this diff implements; (3) where the readings and the diff diverge — specifically, which surface the intent's expectations live at versus which surface the diff's changes and its tests exercise.\n\nDo not invoke any skill, and do not spawn subagents of your own — you are the reviewer. Return your findings as text in your final message; do not route them through any findings-reporting tool the host may offer.\n\n",
+          "name": "Intent Alignment Auditor",
+          "when": "an intent is available: the spec's intent section, or the user's or conversation's own words on what the change is for"
+        }
+      ]
+    },
+    "skill_root": "C:\\laragon\\www\\kevin-work\\Ritelindo\\Landing-Page-Ritelindo\\.agents\\skills\\bmad-code-review",
+    "source_sha256": {
+      "references/claims-check.md": "7be5d35dd90a1950addc2062acdf8669026b239117efe1e398da1e8161cfa6f9",
+      "references/deletion-check.md": "0f1f124e4e957147e89164a272b10bedc694ad0d9ad2618c8610ac74ee9cb0da",
+      "review-prompts/edge-case-hunter.md": "5f4572d57340b4c0d155f33454d644a44af101cd7fd02a01591be68a4ebb8b7f",
+      "review-prompts/verification-gap.md": "06f6184d7d94c808970d0146cdc4585dfd66b94a7b7ab2988277fb6fc4208508",
+      "step-01-gather-context.md": "84112aac114062af5b7b5e3d89f220c757c69abd53c93f955151bc430465cfbe",
+      "step-02-review.md": "4b81354318c5f57ab4fd0faab1ea49d9bcd3f012b1acad5b491f8a89c3d0c300",
+      "step-03-triage.md": "d6f0f0362c47b2ebe0d8b4d99215c76bedeb3aec58be91756962616ccbb0a969",
+      "step-04-present.md": "ba764bc7b5206c450130df0787687c1611a5453997255b8c450ab77240ce4db7",
+      "workflow.md": "d4fbc961cd239708fb16f444b1d4ccb5a92dcd5d2fc7bc4fb57f33b9efc8496e"
+    }
+  },
+  "outputs": {
+    "references/claims-check.md": "7be5d35dd90a1950addc2062acdf8669026b239117efe1e398da1e8161cfa6f9",
+    "references/deletion-check.md": "0f1f124e4e957147e89164a272b10bedc694ad0d9ad2618c8610ac74ee9cb0da",
+    "review-prompts/edge-case-hunter.md": "5f4572d57340b4c0d155f33454d644a44af101cd7fd02a01591be68a4ebb8b7f",
+    "review-prompts/verification-gap.md": "06f6184d7d94c808970d0146cdc4585dfd66b94a7b7ab2988277fb6fc4208508",
+    "step-01-gather-context.md": "ae26d3a2636dcc499c8ca9df740e1d105a5b846a770c8e79a215770e68c00080",
+    "step-02-review.md": "5ed6a7b0fb6969f25955aac633e80442d157170138482a318a457bcbaeef9f64",
+    "step-03-triage.md": "c38b3a2a454f8c290c4e911669a6934f5fb2b285ed3c95f69565493a9db00742",
+    "step-04-present.md": "fdd48a93cb8f5236e14c60338bc37d130c80ec88ff0bb8ef3f77c9f687aa4dfb",
+    "workflow.md": "81512613a6cfc5b54508572f9d344c95bcbb50390c33891ed59a1da2402e9b14"
+  },
+  "project_root": "C:\\laragon\\www\\kevin-work\\Ritelindo\\Landing-Page-Ritelindo",
+  "project_slug": "landing-page-ritelindo",
+  "root_hash": "a8694e8650bf",
+  "schema_version": 1,
+  "skill": "bmad-code-review"
+}

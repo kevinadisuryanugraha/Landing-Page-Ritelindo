@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="96" fill="#0A3981"/>
+  <circle cx="256" cy="256" r="170" fill="#1F509A"/>
+  <!-- Store icon silhouette -->
+  <path d="M150 220 L188 140 L324 140 L362 220 Z" fill="#F59E0B"/>
+  <rect x="160" y="220" width="192" height="152" rx="16" fill="#FFFFFF"/>
+  <path d="M208 372 L208 280 L304 280 L304 372 Z" fill="#0A3981"/>
+  <circle cx="256" cy="250" r="16" fill="#25D366"/>
+</svg>
