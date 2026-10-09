@@ -85,6 +85,14 @@ describe('BMAD & Anti-Slop Strict Verification Suite (Ritelindo Landing Page)', 
       assert.ok(h1Matches, 'Hero must contain an H1');
       assert.strictEqual(h1Matches.length, 1, 'Exactly 1 H1 is allowed on the page for SEO');
     });
+
+    test('2.5. Interactive Connected Pipeline in WorkflowSection (Stepper & Deliverables)', () => {
+      const workflowFile = fs.readFileSync(path.resolve('src/components/WorkflowSection.tsx'), 'utf-8');
+      assert.ok(workflowFile.includes('activeStep'), 'Workflow must have interactive activeStep state');
+      assert.ok(workflowFile.includes('Deliverables Tahap Ini:'), 'Workflow must display deliverable chips');
+      assert.ok(workflowFile.includes('Tahap 0{currentStepData.step}'), 'Workflow spotlight banner must reflect active stage');
+      assert.ok(workflowFile.includes('handleNextStep'), 'Workflow must have step navigation handlers');
+    });
   });
 
   // =========================================================================
