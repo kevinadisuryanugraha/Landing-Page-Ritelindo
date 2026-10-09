@@ -240,30 +240,90 @@ export const WORKFLOW_STEPS: WorkflowStep[] = [
   {
     step: 1,
     title: 'Kirim Ukuran Denah Ruangan Toko',
+    shortLabel: 'Konsultasi Denah',
     description:
       'Kirimkan estimasi ukuran panjang x lebar toko Anda (atau sketsa kasar denah) melalui WhatsApp. Tim kami memandu tanpa kewajiban pembelian awal.',
     highlight: 'Konsultasi Tanpa Biaya',
+    duration: 'Respon < 15 Menit',
+    cost: 'Rp 0 (Gratis)',
+    deliverables: [
+      'Panduan pengukuran ruangan toko',
+      'Rekomendasi awal zonasi display rak',
+      'Format sketsa denah mudah via WhatsApp',
+    ],
+    icon: 'MessageSquare',
+    actionCta: {
+      label: 'Kirim Ukuran Toko via WA',
+      source: 'hero',
+      customMessage:
+        'Halo Tim Ritelindo, saya ingin konsultasi denah ruangan toko dan mengirimkan ukuran toko saya. Mohon panduannya.',
+    },
   },
   {
     step: 2,
     title: 'Pembuatan Gambar Kerja 3D & Rincian Unit',
+    shortLabel: 'Simulasi Desain 3D',
     description:
       'Tim drafter memproses denah visual 3D penataan rak, alur kasir, dan lorong belanja, disertai rincian penawaran harga transparan.',
     highlight: 'Kalkulasi Kebutuhan Presisi',
+    duration: 'Pengerjaan 1x24 Jam',
+    cost: '100% Gratis',
+    deliverables: [
+      'Visual denah 3D tampak atas dan perspektif',
+      'Analisis lebar lorong sirkulasi pembeli',
+      'Rincian penawaran unit rak tanpa komitmen',
+    ],
+    icon: 'Compass',
+    actionCta: {
+      label: 'Klaim Desain 3D Toko',
+      source: 'layout3d',
+      customMessage:
+        'Halo Tim Ritelindo, saya ingin klaim pembuatan gambar kerja denah 3D gratis untuk toko retail saya.',
+    },
   },
   {
     step: 3,
     title: 'Produksi Pabrik & Pengiriman Armada',
+    shortLabel: 'Fabrikasi & Pengiriman',
     description:
       'Rak diproduksi di lini pabrik sesuai standar SNI. Setelah proses kontrol kualitas, pesanan dikirim langsung ke alamat toko Anda.',
     highlight: 'Free Ongkir Jawa - Bali',
+    duration: 'Fabrikasi 1 - 3 Hari',
+    cost: 'Bebas Biaya Kirim',
+    deliverables: [
+      'Plat baja cold-rolled tebal standar SNI',
+      'Finishing powder coating oven 200°C tahan karat',
+      'Pengiriman dikawal armada angkut internal pabrik',
+    ],
+    icon: 'Truck',
+    actionCta: {
+      label: 'Cek Jadwal Pengiriman',
+      source: 'package',
+      customMessage:
+        'Halo Tim Ritelindo, saya ingin menanyakan jadwal pengiriman armada dan ketersediaan stok rak siap kirim.',
+    },
   },
   {
     step: 4,
     title: 'Perakitan Langsung oleh Teknisi di Lokasi',
+    shortLabel: 'Instalasi di Lokasi',
     description:
       'Tim teknisi pabrik mendatangi toko Anda untuk merakit seluruh rak hingga berdiri kokoh dan siap ditata produk dagangan.',
     highlight: 'Free Perakitan Jatim, Jateng & DIY',
+    duration: 'Selesai dalam 1 Hari',
+    cost: 'Gratis Jasa Teknisi',
+    deliverables: [
+      'Pemasangan sistem knock-down presisi tanpa baut',
+      'Uji kestabilan ambalan shelving di lokasi',
+      'Serah terima rak toko siap tata produk dagangan',
+    ],
+    icon: 'Wrench',
+    actionCta: {
+      label: 'Konsultasi Perakitan Toko',
+      source: 'faq',
+      customMessage:
+        'Halo Tim Ritelindo, saya ingin menanyakan jadwal perakitan teknisi langsung di lokasi toko saya.',
+    },
   },
 ];
 

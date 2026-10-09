@@ -48,6 +48,17 @@ export interface TestimonialItem {
 export interface WorkflowStep {
   step: number;
   title: string;
+  shortLabel: string;
   description: string;
   highlight: string;
+  duration: string;
+  cost: string;
+  deliverables: string[];
+  icon: string;
+  actionCta: {
+    label: string;
+    source: 'hero' | 'layout3d' | 'package' | 'faq';
+    customMessage: string;
+  };
 }
+
